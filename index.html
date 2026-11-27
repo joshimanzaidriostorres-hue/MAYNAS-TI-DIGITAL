@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAYNAS TI DIGITAL - Plataforma institucional del CETPRO Maynas">
+    <title>MAYNAS TI DIGITAL | CETPRO Maynas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="#inicio" class="brand">
+                <img src="assets/images/logo-cetpro.png"
+                     alt="Logo oficial CETPRO Maynas">
+                <div>
+                    <h1>CETPRO MAYNAS</h1>Formacion técnica para construir un mejor futuro.
+                    
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Abrir menú" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="#matricula">Preinscripción</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+      <section id="inicio" class="hero page-section active">
+            <div class="container hero-content">
+                <span class="hero-label">CETPRO MAYNAS</span>
+
+                <h2>Construye tu futuro con una formación técnica de calidad</h2>
+
+                <p>
+                    Aprende, desarrolla tus habilidades y prepárate
+                    para nuevas oportunidades profesionales.
+                </p>
+
+                <a href="#especialidades" class="btn-primary">
+                    Conoce nuestras especialidades
+                </a>
+                <a href="#matricula" class="btn-secondary">
+    Preinscríbete aquí
+</a>
+            </div>
+        </section>
+
+        
+<!-- NOSOTROS -->
+<section id="nosotros" class="section about-section page-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">CONÓCENOS</span>
+            <h2 class="section-title">Sobre el CETPRO Maynas</h2>
+            <p class="section-description">
+                Educación técnica, oportunidades y desarrollo
+                para nuestra región.
+            </p>
+        </div>
+
+        <!-- HISTORIA -->
+        <div class="about-history">
+            <h3>Nuestra historia</h3>
+            <p>
+                El Centro de Educación Técnico Productiva Maynas
+                es una institución comprometida con la formación
+                técnica de jóvenes y adultos, promoviendo el
+                desarrollo de habilidades productivas,
+                competencias laborales y oportunidades de
+                emprendimiento en la región Loreto.
+            </p>
+        </div>
+
+        <!-- MISIÓN Y VISIÓN -->
+        <div class="about-grid">
+
+            <article class="about-card">
+                <div class="about-icon">🎯</div>
+                <h3>Nuestra misión</h3>
+                <p>
+                    Formar profesionales técnicos competentes,
+                    emprendedores y comprometidos con el desarrollo
+                    de la sociedad, brindando una educación
+                    técnico-productiva de calidad, basada en el
+                    desarrollo de capacidades, conocimientos,
+                    habilidades y valores que respondan a las
+                    necesidades del mercado laboral y contribuyan
+                    al progreso económico y social de Loreto.
+                </p>
+            </article>
+
+            <article class="about-card">
+                <div class="about-icon">🌟</div>
+                <h3>Nuestra visión</h3>
+                <p>
+                    Ser una institución de Educación
+                    Técnico-Productiva líder y reconocida en la
+                    región Loreto, por brindar una formación
+                    técnica innovadora, inclusiva y de calidad,
+                    promoviendo el emprendimiento, la innovación
+                    tecnológica y la formación integral de
+                    ciudadanos capaces de contribuir al
+                    desarrollo sostenible de nuestra región
+                    y del país.
+                </p>
+            </article>
+
+        </div>
+
+        <!-- OBJETIVOS -->
+        <div class="about-objectives">
+            <h3>Nuestros objetivos institucionales</h3>
+
+            <ul>
+                <li>Brindar formación técnica de calidad.</li>
+                <li>Fortalecer las competencias laborales y emprendedoras.</li>
+                <li>Promover la innovación y el uso de tecnologías.</li>
+                <li>Facilitar la inserción laboral de los estudiantes.</li>
+                <li>Contribuir al desarrollo productivo de Loreto.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+        
+<!-- ESPECIALIDADES -->
+<section id="especialidades" class="section section-light page-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">FORMACIÓN TÉCNICA</span>
+
+            <h2 class="section-title">
+                Nuestras especialidades
+            </h2>
+
+            <p class="section-description">
+                Descubre nuestros programas de estudios y
+                encuentra la oportunidad de desarrollar
+                tus habilidades profesionales.
+            </p>
+        </div>
+
+        <!-- BUSCADOR -->
+        <div class="specialty-search">
+            <input
+                type="search"
+                id="searchProgram"
+                placeholder="Buscar una especialidad..."
+                aria-label="Buscar especialidad">
+
+            <select id="filterCycle">
+                <option value="">Todos los ciclos</option>
+            </select>
+
+            <select id="filterShift">
+                <option value="">Todos los turnos</option>
+            </select>
+
+            <button type="button" id="clearFilters">
+                Limpiar filtros
+            </button>
+        </div>
+
+        <p id="programCount" class="program-count"></p>
+
+        <!-- TARJETAS DE ESPECIALIDADES -->
+        <div id="specialtyContainer" class="specialty-grid">
+
+            <!-- Aquí aparecerán las 13 especialidades -->
+
+        </div>
+
+        <p id="noPrograms" hidden>
+            No se encontraron especialidades.
+        </p>
+
+    </div>
+
+</section>
+
+
+        
+<!-- PREINSCRIPCIÓN -->
+<section id="matricula" class="section page-section">
+    <div class="container">
+
+        <h2 class="section-title">Preinscripción</h2>
+
+        <p class="section-description">
+            Registra tus datos y elige el programa de estudio
+            que deseas seguir en CETPRO MAYNAS.
+        </p>
+
+        <div class="contact-card">
+
+            <form id="formPreinscripcion">
+
+                <div class="form-group">
+                    <label>Nombres y apellidos</label>
+                    <input type="text" name="nombres" required>
+                </div>
+
+                <div class="form-group">
+                    <label>DNI</label>
+                    <input type="text" name="dni"
+                           maxlength="8" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" name="fechaNacimiento" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Número de celular</label>
+                    <input type="tel" name="celular" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Correo electrónico</label>
+                    <input type="email" name="correo">
+                </div>
+
+                <div class="form-group">
+                    <label>Especialidad que deseas estudiar</label>
+                    <select name="especialidad" required>
+                        <option value="">Selecciona una especialidad</option>
+                        <option>Plataformas y Servicios de TI</option>
+                        <option>Cocina y Servicios Gastronómicos</option>
+                        <option>Estilismo</option>
+                        <option>Fabricación de Prendas de Vestir</option>
+                        <option>Soldadura</option>
+                        <option>Mantenimiento de Motos y Vehículos Afines</option>
+                        <option>Panificación Industrial</option>
+                        <option>Mantenimiento de Servicios Eléctricos</option>
+                        <option>Asistencia en Contabilidad</option>
+                        <option>Apoyo Administrativo</option>
+                        <option>Operaciones de Almacenamiento</option>
+                        <option>Confección de Artículos de Cuero y Marroquinería</option>
+                        <option>Servicios para Recepción de Hostelería</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Turno de preferencia</label>
+                    <select name="turno" required>
+                        <option value="">Selecciona un turno</option>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Enviar preinscripción
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+       
+<!-- CONTACTO -->
+<section id="contacto" class="section section-light page-section">
+    <div class="container">
+        <h2 class="section-title">Contactos</h2>
+
+        <p class="section-description">
+            Estamos para orientarte sobre nuestros programas de estudio.
+        </p>
+
+        <div class="contact-card">
+            <h3>📍 CETPRO MAYNAS</h3>
+
+            <p><strong>Dirección:</strong></p>
+
+            <p>Calle Requena 177 – Iquitos</p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Calle+Requena+177+Iquitos+Peru"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary">
+                Ver ubicación en Google Maps
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 CETPRO MAYNAS - CETPRO MAYNAS.</p>
+            <p>Formación técnica para construir un mejor futuro.</p>
+        </div>
+    </footer>
+
+<script src="js/especialidades.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
